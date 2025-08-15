@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New The Treasures of Montezuma 2</title>
+   
+<link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">New The Treasures of Montezuma 2</h1>
+            <div class="level-info">Level <span id="levelDisplay">1</span> - Target: <span id="targetDisplay">1000</span></div>
+        </div>
+        
+        <div class="game-ui">
+            <div class="ui-item">
+                <span class="ui-label">SCORE</span>
+                <span class="ui-value" id="scoreDisplay">0</span>
+            </div>
+            <div class="ui-item">
+                <span class="ui-label">MOVES</span>
+                <span class="ui-value" id="movesDisplay">30</span>
+            </div>
+            <div class="ui-item">
+                <span class="ui-label">LEVEL</span>
+                <span class="ui-value" id="currentLevel">1</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="480" height="480"></canvas>
+
+        <div class="game-controls">
+            <button class="btn" onclick="game.newGame()">New Game</button>
+            <button class="btn" onclick="game.resetLevel()">Reset Level</button>
+        </div>
+    </div>
+
+    <div id="gameMessage" class="game-message"></div>
+
+    
+<script src="script.js"></script>
+
+</body>
+</html>
