@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New The Treasures of Montezuma 2</title>
+    
+<link rel="stylesheet" href="styles.css"/>
+
+
+</head>
+<body>
+    <div id="game-container">
+        <!-- Main Menu Screen -->
+        <div id="main-menu" class="screen">
+            <h1>Treasures of Montezuma 2</h1>
+            <div class="menu-buttons">
+                <button id="play-btn">Play</button>
+                <button id="instructions-btn">Instructions</button>
+                <button id="about-btn">About</button>
+            </div>
+        </div>
+
+        <!-- Instructions Screen -->
+        <div id="instructions-screen" class="screen hidden">
+            <h2>How to Play</h2>
+            <div class="instructions-content">
+                <p>Match 3 or more gems of the same color to score points!</p>
+                <p>Click on two adjacent gems to swap them.</p>
+                <p>Create chains for bonus points!</p>
+                <div class="gem-examples">
+                    <div class="gem red"></div>
+                    <div class="gem red"></div>
+                    <div class="gem red"></div>
+                    <span>= 10 points</span>
+                </div>
+                <div class="gem-examples">
+                    <div class="gem blue"></div>
+                    <div class="gem blue"></div>
+                    <div class="gem blue"></div>
+                    <div class="gem blue"></div>
+                    <span>= 20 points</span>
+                </div>
+            </div>
+            <button id="instructions-back-btn">Back to Menu</button>
+        </div>
+
+        <!-- About Screen -->
+        <div id="about-screen" class="screen hidden">
+            <h2>About</h2>
+            <div class="about-content">
+                <p>New The Treasures of Montezuma 2</p>
+                <p>A classic match-3 puzzle game</p>
+                <p>Created with HTML5 Canvas</p>
+                <p>© 2023 Game Developer</p>
+            </div>
+            <button id="about-back-btn">Back to Menu</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <div class="game-header">
+                <div id="score-display">Score: 0</div>
+                <button id="restart-btn">Restart</button>
+            </div>
+            <canvas id="game-canvas"></canvas>
+            <button id="game-menu-btn">Main Menu</button>
+        </div>
+    </div>
+
+  <script src="script.js"></script> 
+
+
+</body>
+</html>
